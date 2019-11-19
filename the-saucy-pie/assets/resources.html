@@ -1,0 +1,35 @@
+$(document).ready(function() {
+
+    $('select').on('change', function() {
+        var size = document.getElementById("ChSize");
+        var operandOne = size.options[size.selectedIndex].value;
+
+        console.log(operandOne);
+
+        var crust = document.getElementById("ChCrust");
+        var operandTwo = crust.options[crust.selectedIndex].value;
+
+        console.log(operandTwo);
+
+        var quan = document.getElementById("ChQuan");
+        var operandThree = quan.options[quan.selectedIndex].value;
+
+        console.log(operandThree);
+
+        var oneFp;
+        var twoFp;
+        var threeFp;
+        var addPrice;
+        var priceTotal;
+
+        oneFp = parseFloat(operandOne);
+        twoFp = parseFloat(operandTwo);
+        threeFp = parseFloat(operandThree);
+
+        if (document.getElementById("Cheese").checked) {
+            addPrice = oneFp + twoFp;
+            priceTotal = addPrice * threeFp;
+            document.getElementById("cprice").innerHTML = priceTotal.toString();
+        }
+    });
+}); 

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Saucy Pie">
+    <meta name="keywords" content="The, Saucy, Pie, Grab, and, Go, Pizza">
+    <meta name="author" content="Anabella Barnett, Ashari Elliott, Jeremy Matthey, Melody Serbaus">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/js/dropdown.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Saucy Pie | Order</title>
+</head>
+
+<body>
+    <header class="fixed-top contact-header">
+        <figure class="responsive-figure">
+            <div class="fig-img">
+                <a href="index.html"> <img class="logo" src="assets/imgs/saucypie-logo1.svg" alt="saucy pie logo"></a>
+            </div>
+            <figcaption class="lobster fig-cap"><a href="index.html">The Saucy Pie</a></figcaption>
+        </figure>
+        <div class="responsive-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="start-order"><a href="database.html">Start Order</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+        <div id="backdrop">
+            <div class="bck-img">
+            <img src="assets/imgs/pizza.jpg" alt="Backdrop">
+            </div>
+            
+            <div class="bck-lob">
+                <h1 class="lobster order-data">Order</h1>
+            </div>
+            
+        </div>
+        <div class="container-fluid data-content-container">
+
+        <form id="CustomerOrder" onsubmit="return false" class="container-fluid od">
+            <!----------------------------------->
+
+            <div class="accordion" id="accordionExample">
+                
+                <div class="card">
+                    <div class="bck-card-1" id="headingOne">
+                        <h2 class="p-2 lobster">
+                      Customer Info
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!--If doesn't work, everything under this point needs to be copied and pasted out of the accordion-->
+                            <div class="container-fluid form-group">
+                                <div class="c-info">
+                                    <div class="col info-c">
+                                        <label for="FirstName" class="formlabel mb-3"></label>
+                                        <input type="text" id="FirstName" name="FirstName" size="30" maxlength="30" placeholder="First Name" data-rule-required="true" data-msg-required="Required" />
+                                        <label for="FirstName" class="error"></label>
+                                    </div>
+                                    <br>
+
+                                    <div class="col info-c">
+                                        <label for="LastName" class="formlabel mb-3"></label>
+                                        <input type="text" id="LastName" name="LastName" size="30" maxlength="30" placeholder="Last Name" data-rule-required="true" data-msg-required="Required" />
+                                        <label for="LastName" class="error"></label>
+                                    </div>
+                                    <br />
+
+                                    <div class="col info-c">
+                                        <label for="Email" class="formlabel"></label>
+                                        <input type="text" id="Email" name="Email" size="40" maxlength="40" placeholder="Email" data-rule-required="true" data-msg-required="Email is Required" data-rule-email="true" data-msg-email="Not a valid Email" />
+                                        <label for="Email" class="error"></label>
+                                        <!--Note: data-rule-required goes with data-msg-required, just like data-rule-email goes with data-msg-email. data-rule- will either be true or false-->
+                                    </div>
+                                    <br>
+
+                                    <div class="col info-c">
+                                        <label for="PhoneNumber" class="formlabel mt-1"></label>
+                                        <input type="text" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14" placeholder="Phone Number" data-rule-required="true" data-rule-phoneUS="true" data-msg-required="Required" />
+                                        <label for="PhoneNumber" class="error"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pizza">
+                    <h2 class="lobster mb-0 d-piz-header">Pizzas</h2>
+                </div>
+                
+                <div id="size-options">
+                    <h3>Size Options</h3>
+                    <p>10" Small ($10.99), 13" Medium ($12.99), 15" Large ($15.99)</p>
+                </div>
+                
+                <div id="crust-options">
+                    <h3>Crust Options</h3>
+                    <p>Regular, Thin, Thick (+$1.99)</p>
+                </div>
+                
+                <section class="pizza-container container-fluid">
+
+                    <div class="ch-pep">
+
+                        <div class="card ch-box piz-box">
+                            <label for="Cheese" class="pbox">
+            <img src="assets/imgs/cheese1.png" alt="Cheese Pizza" />
+            </label>
+                            <div class="chk-box">
+                                <h5><input type="checkbox" name="CheesePizza" class="CheesePizza chk-box" id="Cheese" value="CH" />The Cheese</h5>
+                            </div>
+                            <select name="CheesePizza" class="CheesePizza" id="ChCrust">
+            <option value="">Crust</option>
+            <option value="Regular">Regular</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick - $1.99">Thick (+$1.99)</option>
+        </select>
+
+                            <select name="CheesePizza" class="CheesePizza" id="ChSize" onchange="calculatetotal">
+            <option value="">Size</option>
+            <option value="Small - $10.99">Small ($10.99)</option>
+            <option value="Medium - $12.99">Medium ($12.99)</option>
+            <option value="Large - $15.99">Large ($15.99)</option>
+        </select>
+
+                            <select name="CheesePizza" class="CheesePizza" id="ChQuan">
+            <option value="">Quantity</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+
+
+                        <div class="card pep-box piz-box">
+                            <label for="Pepperoni" class="pbox">
+            <img src="assets/imgs/pepperoni1.png" alt="Pepperoni Pizza" />
+            </label>
+                            <div class="chk-box">
+                                <h5><input type="checkbox" name="PepperoniPizza" class="PepperoniPizza chk-box" id="Pepperoni" value="PEP" />The Pepperoni</h5>
+                            </div>
+
+                            <label class="formlabel"></label>
+                            <select name="PepperoniPizza" class="PepperoniPizza" id="PepCrust">
+            <option value="">Crust</option>
+            <option value="0">Regular</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick - $1.99">Thick (+$1.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="PepperoniPizza" class="PepperoniPizza" id="PepSize" onchange="calculatetotal">
+            <option value="">Size</option>
+            <option value="Small - $10.99">Small ($10.99)</option>
+            <option value="Medium - $12.99">Medium ($12.99)</option>
+            <option value="Large - $15.99">Large ($15.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="PepperoniPizza" class="PepperoniPizza" id="PepQuan">
+            <option value="">Quantity</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+
+                    </div>
+
+                    <div class="hog-haw">
+                        <div class="card hog-box piz-box">
+                            <label for="Hog" class="pbox">
+            <img src="assets/imgs/thehog12.png" alt="Hog Pizza" />
+        </label>
+                            <div class="chk-box">
+                                <h5><input type="checkbox" name="HogPizza" class="HogPizza chk-box" id="Hog" value="HOG" />The Hog</h5>
+                            </div>
+                            <label class="formlabel"></label>
+                            <select name="HogPizza" class="HogPizza" id="HogCrust">
+            <option value="">Crust</option>
+            <option value="Regular">Regular</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick - $1.99">Thick (+$1.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="HogPizza" class="HogPizza" id="HogSize" onchange="calculatetotal">
+            <option value="">Size</option>
+            <option value="Small - $10.99">Small ($10.99)</option>
+            <option value="Medium - $12.99">Medium ($12.99)</option>
+            <option value="Large - $15.99">Large ($15.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="HogPizza" class="HogPizza" id="HogQuan">
+            <option value="">Quantity</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+
+                        <div class="card haw-box piz-box">
+                            <label for="Hawaiian" class="pbox">
+        <img src="assets/imgs/hawaiian12.png" alt="Hawaiian Pizza" />
+        </label>
+                            <div class="chk-box">
+                                <h5><input type="checkbox" name="HawaiianPizza" class="HawaiianPizza chk-box" id="Hawaiian" value="HAW" />The Hawaiian</h5>
+                            </div>
+
+                            <label class="formlabel"></label>
+                            <select name="HawaiianPizza" class="HawaiianPizza" id="HawCrust">
+            <option value="">Crust</option>
+            <option value="Regular">Regular</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick - $1.99">Thick (+$1.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="HawaiianPizza" class="HawaiianPizza" id="HawSize" onchange="calculatetotal">
+            <option value="">Size</option>
+            <option value="Small - $10.99">Small ($10.99)</option>
+            <option value="Medium - $11.99">Medium ($12.99)</option>
+            <option value="Large - $12.99">Large ($15.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="HawaiianPizza" class="HawaiianPizza" id="HawQuan">
+            <option value="">Quantity</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+                    </div>
+
+                    <div class="sup-veg">
+                        <div class="card sup-box piz-box">
+                            <label for="Supreme" class="pbox">
+            <img src="assets/imgs/supreme1.png" alt="Supreme Pizza" />
+        </label>
+                            <div class="chk-box">
+                                <h5><input type="checkbox" name="SupremePizza" class="SupremePizza chk-box" id="Supreme" value="SUP" />The Supreme</h5>
+                            </div>
+                            <label class="formlabel"></label>
+                            <select name="SupremePizza" class="SupremePizza" id="SupCrust">
+            <option value="">Crust</option>
+            <option value="Regular">Regular</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick - $1.99">Thick (+$1.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="SupremePizza" class="SupremePizza" id="SupSize" onchange="calculatetotal">
+            <option value="">Size</option>
+            <option value="Small - $10.99">Small ($10.99)</option>
+            <option value="Medium - $12.99">Medium ($12.99)</option>
+            <option value="Large - $15.99">Large ($15.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="SupremePizza" class="SupremePizza" id="SupQuan">
+            <option value="">Quantity</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+
+                        <div class="card veg-box piz-box">
+                            <label for="Veggie" class="pbox">
+            <img src="assets/imgs/veggie12.png" alt="Veggie Pizza" />
+        </label>
+                            <div class="chk-box">
+                                <h5><input type="checkbox" name="VeggiePizza" class="VeggiePizza chk-box" id="Veggie" value="VEG" />The Veggie</h5>
+                            </div>
+                            <label class="formlabel"></label>
+                            <select name="VeggiePizza" class="VeggiePizza" id="VegCrust">
+            <option value="">Crust</option>
+            <option value="Regular">Regular</option>
+            <option value="Thin">Thin</option>
+            <option value="Thick - $1.99">Thick (+$1.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="VeggiePizza" class="VeggiePizza" id="VegSize" onchange="calculatetotal">
+            <option value="">Size</option>
+            <option value="Small - $10.99">Small ($10.99)</option>
+            <option value="Medium - $12.99">Medium ($12.99)</option>
+            <option value="Large - $15.99">Large ($15.99)</option>
+        </select>
+                            <label class="formlabel"></label>
+                            <select name="VeggiePizza" class="VeggiePizza" id="VegQuan">
+            <option value="">Quantity</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+                        <!--veg-box-->
+                    </div>
+                    
+                </section>
+                <!--pizza container-fluid-->
+
+                <br>
+                <div class="sideslabel">
+                    <h4>Sides</h4>
+                </div>
+                
+                <div class="sides container-fluid">
+                    <div class="bread-sal">
+                        <div class="bread-box">
+                            <label for="Bread" class="pbox formlabel">
+            <img src="assets/imgs/breadsticks.png" alt="Breadsticks" />
+        <input type="checkbox" name="Breadsticks" class="Breadsticks" id="Bread" value="BR" />The Breadsticks
+        </label>
+                            <select name="Breadsticks" id="BreadStyle" class="Breadsticks" onchange="calculatetotal">
+            <option value="">Style</option>
+            <option value="reg - $3.99">Regular ($3.99)</option>
+            <option value="stf - $5.99">Stuffed ($5.99)</option>
+        </select>
+                            <select name="Breadsticks" class="Breadsticks" id="BreadQuan">
+            <option value="">Quantity</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+
+                        <br>
+                        <div class="hsalad">
+                            <img src="assets/imgs/salad.jpg" alt="Salad">
+                            <label class="formlabel">The House Salad: ($2.99)</label>
+                            <select name="Salad" id="Salad">
+            <option value="">Dressing</option>
+            <option value="rch">Ranch</option>
+            <option value="ita">Italian</option>
+            <option value="ths">Thousand Island</option>
+            <option value="vin">Vinaigrette</option>
+            </select>
+            <select name="Salad" id="SaladQuan">
+            <option value="">Qty</option>
+            <option value=" 1">1</option>
+            <option value=" 2">2</option>
+            <option value=" 3">3</option>
+            <option value=" 4">4</option>
+            <option value=" 5">5</option>
+        </select>
+                        </div>
+                    </div>
+
+                    <section class="container-fluid mt-2">
+                        <div class="drink-bck">
+                            <h4>Drinks</h4>
+                        </div>
+                        <div class="cl-drink">
+                            <!--sect1 coke-drpepper-->
+                            <div class="sect1">
+
+                                <div class="drink-data">
+                                    <img src="assets/imgs/drinks/coke.jpg" alt="Coke">
+                                    <label class="formlabel">Coke:</label>
+                                    <select name="Coke" id="Coke">
+            <option value="">Qty</option>
+            <option value="ck1">1</option>
+            <option value="ck2">2</option>
+            <option value="ck3">3</option>
+            <option value="ck4">4</option>
+            <option value="ck5">5</option>
+        </select>
+                                </div>
+
+                                <div class="drink-data">
+                                    <img src="assets/imgs/drinks/dietcoke.jpg" alt="Diet Coke">
+                                    <label class="formlabel">Diet Coke:</label>
+                                    <select name="DietCoke" id="DietCoke">
+            <option value="">Qty</option>
+            <option value="dck1">1</option>
+            <option value="dck2">2</option>
+            <option value="dck3">3</option>
+            <option value="dck4">4</option>
+            <option value="dck5">5</option>
+        </select>
+                                </div>
+
+                                <div class="drink-data">
+                                    <img src="assets/imgs/drinks/drpepper.jpg" alt="Dr. Pepper">
+                                    <label class="formlabel">Dr. Pepper:</label>
+                                    <select name="DrPepper" id="DrPepper">
+            <option value="">Qty</option>
+            <option value="dr1">1</option>
+            <option value="dr2">2</option>
+            <option value="dr3">3</option>
+            <option value="dr4">4</option>
+            <option value="dr5">5</option>
+        </select>
+                                </div>
+
+                            </div>
+                            <!--drink-sect1 coke-drpepper-->
+
+                            <!--drink-sect2 sprite-unswttea-->
+                            <div class="sect2">
+
+                                <div class="drink-data">
+                                    <img class="spr" src="assets/imgs/drinks/sprite.jpg" alt="Sprite">
+                                    <label class="formlabel">Sprite:</label>
+                                    <select name="Sprite" id="Sprite">
+            <option value="">Qty</option>
+            <option value="sp1">1</option>
+            <option value="sp2">2</option>
+            <option value="sp3">3</option>
+            <option value="sp4">4</option>
+            <option value="sp5">5</option>
+        </select>
+                                </div>
+
+                                <div class="drink-data">
+                                    <img class="swt" src="assets/imgs/drinks/icedtea.jpg" alt="Sweet Tea">
+                                    <label class="formlabel">Sweet Tea:</label>
+                                    <select name="SwtTea" id="SwtTea">
+            <option value="">Qty</option>
+            <option value="sw1">1</option>
+            <option value="sw2">2</option>
+            <option value="sw3">3</option>
+            <option value="sw4">4</option>
+            <option value="sw5">5</option>
+        </select>
+                                </div>
+
+                                <div class="drink-data">
+                                    <img class="swt" src="assets/imgs/drinks/icedtea.jpg" alt="Unsweet Tea">
+                                    <label class="formlabel">Unsweet Tea:</label>
+                                    <select name="UnswtTea" id="UnswtTea">
+            <option value="">Qty</option>
+            <option value="un1">1</option>
+            <option value="un2">2</option>
+            <option value="un3">3</option>
+            <option value="un4">4</option>
+            <option value="un5">5</option>
+        </select>
+                                </div>
+
+                            </div>
+                            <!--sect2 sprite-UnswtTea-->
+                        </div>
+                        <!--cl-drink w/o header-->
+                    </section>
+                    <!--drink-box w/ header-->
+                </div>
+                
+                <!--sides container-fluid-->
+                
+                <section class="container comment-box">
+                    <div class="special">
+                        <label class="Comments-box" for="Comments">Special Instructions:</label>
+                    </div>
+                    <br>
+                    <input type="text" id="Comments" name="Comments" size="50" maxlength="50" />
+                </section>
+                
+                <div class="submit-button">
+                    <div class="order-button btn mt-2">
+                        <input type="submit" value="Get Saucy!" onclick="CreateCustOrder()">
+                    </div>
+                </div>
+                
+            </div>
+        </form>
+        
+    </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="assets/js/database.js"></script>
+    <footer>
+        <p>The Saucy Pie &copy;</p>
+        <p>Developed by The Insurgents </p>
+        <p><a href="#top" id="scrollToTop">Back to top</a></p>
+    </footer>
+</body>
+
+</html>

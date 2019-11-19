@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="The Saucy Pie">
+        <meta name="keywords" content="The, Saucy, Pie, Grab, and, Go, Pizza">
+        <meta name="author" content="Anabella Barnett, Ashari Elliott, Jeremy Matthey, Melody Serbaus">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+            <!--favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+        <title>The Saucy Pie | Menu</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="assets/js/dropdown.js"></script>
+    </head>
+    <body class="no-background">
+    <div class="container">
+        <header class="fixed contact-header">
+        <figure class="responsive-figure">
+            <div class="fig-img">
+            <a href="index.html"> <img class="logo" src="assets/imgs/saucypie-logo1.svg" alt="saucy pie logo"></a>
+            </div>
+            <figcaption class="lobster fig-cap"><a href="index.html">The Saucy Pie</a></figcaption>
+        </figure>
+        <div class="responsive-nav">
+         <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current" ><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="start-order"><a href="database.html">Start Order</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+    </div>
+        <div id="backdrop">
+            <img src="assets/imgs/pizza.jpg" alt="Backdrop">
+        <div>
+            <h1><span class="lobster">Menu</span></h1>
+        </div>
+        </div>
+        <section class="menu-content">
+        <div class="piz-bar">
+        <div>
+            <h2 class="lobster">Pizzas</h2>
+        </div>
+        <div id="size-options">
+            <h3>Size Options:</h3>
+                <p>10" Small ($10.99), 13" Medium ($12.99), 15" Large ($15.99)</p>
+        </div>
+         <div id="crust-options">
+            <h3>Crust Options:</h3>
+                <p>Regular, Thin, Thick (+$1.99)</p>
+        </div>
+        </div>
+        <p id="hover-me">Hover over pizzas to order!</p>
+    <div id="wrapper-pizza">
+        <div class="row-menu"> 
+        <section class="menu-piz-sect-1">
+    	<div class="column-menu">
+    		<!-- Cheese-->
+    		<figure id="menu-cheese">
+    			<img id="cheese" src="assets/imgs/cheese1.png" alt="cheese pizza"> 
+    		</figure>
+    		<div class="menu-sect">
+    		<figcaption id="button-cheese" class="slidedown">Cheese</figcaption>
+    	    <figcaption class="description" id="cheese-description">Mozzarella with Sauce</figcaption>
+    		<figcaption id="cheese-add" class="add"><a href="database.html">Add To Order</a></figcaption>
+    		</div>
+    	</div>
+    		<!--Pepperoni-->
+    	<div class="column-menu">
+    		<figure id="menu-pep">
+    			<img id="pepperoni" src="assets/imgs/pepperoni1.png" alt="pepperoni pizza">
+    		</figure>
+    		<div class="menu-sect">
+    		<figcaption class="slidedown">Pepperoni</figcaption>
+    		<figcaption class="description" id="pep-description">Mozzarella and Pepperoni with Sauce</figcaption>
+    		<figcaption id="pep-add" class="add"><a href="database.html">Add To Order</a></figcaption>
+    		</div>
+    	</div>
+    	<!--Veggie-->
+    	<div class="column-menu" id="veggie-menu">
+    		<figure id="menu-veg">
+    			<img id="veggie" src="assets/imgs/veggie12.png" alt="veggie pizza"> <!-- add alt text-->
+    		</figure>
+    		<div class="menu-sect">
+    		<figcaption id="button-veg" class="slidedown">Veggie</figcaption>
+    			<figcaption class="description" id="veggie-description">Green/Red Bell Peppers, Onions, Mushrooms, Olives, and Mozzarella with Sauce</figcaption>
+    		    <figcaption id="veggie-add" class="add"><a href="database.html">Add To Order</a></figcaption>
+    		    </div>
+    	</div>
+    	</section>
+    	
+    	<!--The Hog-->
+    	<section class="menu-piz-sect-2">
+    	<div class="column-menu">
+    		<figure id="menu-hog">
+    			<img id="hog" src="assets/imgs/thehog12.png" alt="the hog pizza" >
+    		</figure>
+    		<div class="menu-sect">
+    		<figcaption id="button-hog" class="slidedown">The Hog</figcaption>
+    			<figcaption class="description" id="hog-description">Italian Sausage, Pepperoni, and Mozzeralla with Sauce</figcaption>
+    		    <figcaption id="hog-add" class="add"><a href="database.html">Add To Order</a></figcaption>
+    		    </div>
+    	</div>
+    	<!-- Hawaiian-->
+    	<div class="column-menu">
+    		<figure id="menu-haw">
+    			<img id="hawaiian" src="assets/imgs/hawaiian12.png" alt="hawaiian pizza">
+    		</figure>
+    		<div class="menu-sect">
+    		<figcaption id="button-haw" class="slidedown">Hawaiian</figcaption>
+    			<figcaption class="description" id="hawaiian-description">Canadian Bacon, Pineapple, and Mozzarella with Sauce</figcaption>
+    		    <figcaption id="hawaiian-add" class="add"><a href="database.html">Add To Order</a></figcaption>
+    		    </div>
+    	</div>
+    	<!-- Supreme-->
+    	<div class="column-menu" id="supreme-menu">
+    		<figure id="menu-sup">
+    			<img id="supreme" src="assets/imgs/supreme1.png" alt="supreme pizza">
+    	</figure>
+    	<div class="menu-sect">
+    	<figcaption id="button-sup" class="slidedown">Supreme</figcaption>
+    			<figcaption class="description" id="supreme-description">Pepperoni, Sausage, Hamburger, Canadian Bacon, Green/Red Bell Peppers, Onions, Mushrooms, Olives, and Mozzarella with Sauce</figcaption>
+    	        <figcaption id="supreme-add" class="add"><a href="database.html">Add To Order</a></figcaption>
+    	        </div>
+    	</div>
+    	</section>
+    	</div>
+    </div>
+    	  <div>
+                <h2 class="lobster">Sides</h2> 
+          </div>
+             <div id="bread-sticks">
+                  <img class="sides" src="assets/imgs/breadsticks12.jpg" alt="breadsticks">
+                  <h3 id="hover-breadsticks" class="title">Breadsticks</h3>
+              </div>
+              <div id="breadsticks-description">
+                  <h4>Regular ($3.99)</h4>
+                  <h4>Stuffed ($5.99)</h4>
+              </div>
+
+              <div id="salad">
+                  <img class="sides" src="assets/imgs/salad13.png" alt="salad">
+                  <h3 id="hover-salad" class="title salad-title">House Salad ($2.99/ea)</h3>
+              </div>
+              <div id="salad-description">
+                <h4>Dressings</h4>
+                <ul>
+                    <li>Ranch</li>
+                    <li>Italian</li>
+                    <li>Vinaigrette</li>
+                    <li>Thousand Island</li>
+                </ul>
+                <p>* All House Salads come with House Dressing. Please request a different dressing if you wish.</p>
+              </div>
+	    <div>
+        <h2 class="lobster">Drinks ($1.50)</h2>
+        </div>
+
+            <div id="red-background">
+                <div id="white-background">
+                  <div id="wrapper-drinks">
+            <!--Sprite-->
+                   <img src="assets/imgs/drinks/sprite.jpg" alt="Sprite"> 
+                   <button class="drinks-btn"><a href="database.html">Order Now</a></button>
+            <!--Coke-->
+                   <img src="assets/imgs/drinks/coke.jpg" alt="Coke">  
+                   <button class="drinks-btn"><a href="database.html">Order Now</a></button>
+            <!--Diet Coke-->      
+                   <img src="assets/imgs/drinks/dietcoke.jpg" alt="Diet Coke">
+                   <button class="drinks-btn"><a href="database.html">Order Now</a></button>
+            <!--Dr pepper-->
+                   <img src="assets/imgs/drinks/drpepper.jpg" alt="Dr Pepper">
+                   <button class="drinks-btn"><a href="database.html">Order Now</a></button>
+            <!--Iced Tea-->    
+                   <img src="assets/imgs/drinks/icedtea.jpg" alt="Iced Tea">
+                   <button class="drinks-btn"><a href="database.html">Order Now</a></button>
+            </div>
+        </div>
+        </section>
+    <footer>
+        <p>The Saucy Pie &copy;</p>
+        <p>Developed by The Insurgents </p> 
+        <p><a href="#top" id="scrollToTop">Back to top</a></p>
+    </footer>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+
+.header h1{
+  text-align: center;
+  font-size: 45px;
+  color: #FF5400;
+  margin-top: 10px;
+ margin-bottom: 0px;
+}
+
+h2 {
+  text-decoration: underline;
+}
+
+.tab {
+ display:flex;
+ width: auto;
+ margin-left: auto;
+ margin-right: auto;
+ align-items: center;
+ justify-content: center;
+overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1; 
+}
+
+
+
+.tab button {
+  display: inline-flex;
+  background-color: inherit;
+  border-right: solid, 1px;
+  outline: none;
+  padding: 14px 16px;
+  transition: 0.3s;
+  
+}
+
+.tab button:hover {
+  background-color: #ccc;
+  cursor: url('/assets/img/gin.png'), pointer;
+}
+
+.tab button.active {
+  background-color: #00AAFF;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+div .linkcontain {
+  max-width:100%; 
+  height: auto;
+                text-align:center; 
+                padding:20px; 
+}
+
+.linklogo{
+  display: flex;
+object-fit: contain;
+justify-content: center;
+}
+
+
+p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+
+.headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+  cursor: url('/assets/img/gin.png'), pointer;
+}
+
+.title {
+  margin-left: 20px;
+}
+
+.title h1 {
+text-align: center;
+font-size: 50px;
+}
+
+#About h1 {
+  text-align: center;
+font-size: 50px;
+}
+
+#Writing h1 {
+  text-align: center;
+font-size: 50px;
+}
+
+#CoverLetter h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+#Writing p{
+  text-indent: 20px;
+  margin-left:40px;
+  margin-right: 40px;
+}
+
+#Writing h3{
+  margin-left: 20px;
+}
+
+.tablinks {
+  font-size: 20px;
+}
+
+#CoverLetter p{
+margin-left:20px;
+margin-right:20px;
+}
+
+.saucy img {
+  length: 120px;
+  width: 120px;
+  margin-top: 0px;
+}
+
+footer a {
+  display: block;
+  text-align: center;
+}
