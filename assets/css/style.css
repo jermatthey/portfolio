@@ -50,7 +50,7 @@ overflow: hidden;
 
 .tab button:hover {
   background-color: #ccc;
-  cursor: url('/assets/img/gin.png');
+  cursor: url('/assets/img/gin.png'),pointer;
 }
 
 .tab button.active {
@@ -92,7 +92,7 @@ p {
 }
 
 .headshot:hover {
-    cursor: url('assets/img/gin.png');
+    cursor: url('assets/img/gin.png'),pointer;
 }
 
 .title {
