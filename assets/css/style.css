@@ -3,6 +3,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color:#EDFFFB;
+}
 
 h1 {
   color: navy;
@@ -47,7 +50,7 @@ overflow: hidden;
 
 .tab button:hover {
   background-color: #ccc;
-  cursor: url('/assets/img/gin.png'), pointer;
+  cursor: url('assets/img/gin.png'), pointer;
 }
 
 .tab button.active {
@@ -80,15 +83,21 @@ p {
   font-size: 20px;
 }
 
+.mouseDown {
+  cursor: url('assets/img/gin2.png');
+}
 
-.headshot {
+#headshot {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
-  height: auto;
-  cursor: url('/assets/img/gin.png'), pointer;
+  width: 500px;
+  height: 500px;
+  cursor: url('assets/img/gin.png'), pointer;
 }
+
+
+
 
 .title {
   margin-left: 20px;
@@ -133,12 +142,55 @@ margin-left:20px;
 margin-right:20px;
 }
 
-.saucy img {
-  length: 120px;
-  width: 120px;
-  margin-top: 0px;
+#Projects h1{
+  display: block;
+  text-align: center;
+  font-size: 50px;
 }
 
+#descrip p{
+margin-right: 10px;
+margin-left: 200px;
+}
+
+#descrip h2{
+  display: block;
+  text-align: center;
+}
+
+.descrip1 img {
+  max-width:180px;
+    max-height:auto;
+  margin-left: 10px;
+  float: left;
+}
+
+.descrip2 img {
+  height: auto;
+  max-width: 150px;
+  margin-top: 30px;
+  margin-left: 20px;
+  float: left;
+}
+
+.descrip3 img {
+  height: auto;
+  max-width: auto;
+  margin-right: 30px;
+  margin-top: 50px;
+}
+
+.descrip4 img {
+max-width:auto;
+    height:auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  float: left;
+}
+
+.descrip4 {
+  padding-bottom: 10px;
+}
 footer a {
   display: block;
   text-align: center;

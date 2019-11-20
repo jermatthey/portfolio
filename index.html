@@ -10,13 +10,11 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
   </head>
   <body>
-    <div class="header">
-   <h1>Jeremy Matthey</h1>
-   <h1>+</h1>
-   <h1>Portfolio</h1>
-   </div>
+    
     <div class="tab">
      <button class="tablinks" onclick="openCity(event, 'About')">About</button>
   <button class="tablinks" onclick="openCity(event, 'Resume')">Resume</button>
@@ -24,18 +22,21 @@
   <button class="tablinks" onclick="openCity(event, 'Writing')">Writing</button>
   <button class="tablinks" onclick="openCity(event, 'Projects')">Projects + Assignments</button>
   <button class="tablinks" onclick="openCity(event, 'Project-Reflection')">Project Reflection</button>
-
-  
   </div>
+  
   <p></p>
   <div id="About" class="tabcontent" style="display:block">
+    <div class="header">
+   <h1>Jeremy Matthey</h1>
+   <h1>+</h1>
+   <h1>Portfolio</h1>
+   </div>
+   <hr></hr>
   <h1>About</h1>
-  <hr></hr>
+
   
-    <img class="headshot" src="assets/img/headshot1.svg">
-<div class="title">
-    <h2>Jeremy Matthey</h2>
-</div>
+    <img id="headshot" src="assets/img/headshotfr.svg">
+<div class="title"></div>
     <div class="content">
     <p> 
       Jeremy Matthey is a senior at University of Arkansas at Little Rock, studying web development with an emphasis in graphic design. He has always had a propensity for technology and computers as well as artisticly expressing himself, so, of course, he felt right at home when he started the Web Development program at UALR.  After he graduates, Jeremy hopes to create beautiful websites as well as design logos for professional and start-up companies.  Since beginning the program at UALR, he has become employed as an equipment tech for the Arkansas Providers Coalition and has found it to be an invaluable experience.
@@ -55,8 +56,9 @@
         <hr></hr>
         </div>
       <div class="name">
-        <h1><b>Jeremy Matthey</b></h1>
+        <h1><b>Jeremy Matthey<a href="https://www.linkedin.com/in/jeremy-matthey"><img src="assets/img/linkedinlogo.png"  length="40" width="40"></b></h1></a>
         </div>
+
 
 <div class="address">
   <p>809 Orange St, Apt #A</p>
@@ -188,19 +190,33 @@
 <div id="Projects" class="tabcontent">
   <h1>Projects</h1>
     <hr></hr>
-  <div class="saucy">
-    
-    <a href="the-saucy-pie/index.html"><img src="assets/img/saucypie-logo1.svg">
-    <a href="the-saucy-pie/index.html">Pizza Project</a>
-    <p>My Projects and Portfolio, the capstone of my IT minor, was my first experience working with a real client.  As a group, we developed a website using Wordpress for a local organization called Mamas Unidas. Mamas Unidas comprised of hispanic mothers who work to get hispanic high school students on the right track for college.  This took us a bit out of our element, since none of us has used Wordpress before, but we can successfully say that we have become well-versed in that category.
-    <p>For our final project in Intro to IT and Applications, as a group we were to go through the process of developing a website for a client.  Our client was starting an on-campus, grab-and-go pizza restaurant on campus, which we named The Saucy Pie. Our client also gave us free reign for site design.  Everything was developed using HTML, CSS, and Javascript.  For this site to be effective, we needed to have a working database for online ordering.  This was the first complex database we developed within this program.</p>
-    <p>For my final project for Web Technologies, I was to develop a working website of of my concept and design using HTML markup and CSS styling.  Since I do a lot of dogsitting in my spare time, I was inspired to create a website for booking animal grooming and boarding services, which I named Wags While Away.</p>
-    <p>For Web Technologies, one of our first projects was to create an informative website using HTML and CSS discussing the history and development of either the Segway or the SpaceX Dragon.
   
+    <div id="descrip" class="descrip1">
+      <a href="https://web-projects.net/mamas-unidas/"><img src="assets/img/mamasunidaslogo.png"></a>
+      <div class="mamaslink"><a href="https://web-projects.net/mamas-unidas/"><h2>Mamas Unidas</h2></a></div>
+      <p>For Projects and Portfolio, the capstone of my IT minor, was my first experience working with a real client.  As a group, we developed a website using Wordpress for a local organization called Mamas Unidas. Mamas Unidas comprised of hispanic mothers who work to get hispanic high school students on the right track for college.  This took us a bit out of our element, since none of us has used Wordpress before, but we can successfully say that we have become well-versed in that category.</p>
+      </div>
+  <hr></hr>
+    <div id="descrip" class="descrip2">
+    <a href="the-saucy-pie/index.html"><img src="the-saucy-pie/assets/imgs/saucypie-logo1.svg"></a>
+    <div class="saucylink"><a href="the-saucy-pie/index.html"><h2>The Saucy Pie</h2></a>
+    <p>For our final project in Intro to IT and Applications, as a group we were to go through the process of developing a website for a client.  Our client was starting an on-campus, grab-and-go pizza restaurant on campus, which we named The Saucy Pie. Our client also gave us free reign for site design.  Everything was developed using HTML, CSS, and Javascript.  For this site to be effective, we needed to have a working database for online ordering.  This was the first complex database we developed within this program.</p>
+    </div>
+    <hr></hr>
+<div id="descrip" class="descrip3">
+  <a href="wwa/index.html"><img src="wwa/assets/img/wwalogo.png"></a>
+  <a href="wwa/index.html"><h2>Wags While Away</h2></a>
+    <p>For my final project for Web Technologies, I was to develop a working website of my own concept and design using HTML markup and CSS styling.  Since I do a lot of dogsitting in my spare time, I was inspired to create a website for booking animal grooming and boarding services, which I named Wags While Away.</p>
+</div>
+<hr></hr>
+<div id="descrip" class="descrip4">
+  <a href="dragon/index.html"><img src="dragon/img/dragonlogo.png"></a>
+  <a href="dragon/index.html"><h2>SpaceX Dragon</h2></a>
+    <p>For Web Technologies, one of our first projects was to create an informative website using HTML and CSS discussing the history and development of either the Segway or the SpaceX Dragon.</p>
   </div>
-  <div class="wwa">
-  <a href="/wwa">Wags While Away</a>
-  </div>
+</div>
+<hr></hr>
+<h1>Assignments</h1>
 </div>
     <div id="Project-Reflection" class="tabcontent">
       <div class="title">
@@ -219,7 +235,7 @@ The following week we got our feet wet by learning how to use Wordpress.  This w
 </div>
 <footer>
   <h3>
-  <a href="#top">back to top</a>
+  <a href="#top">back to top &uarr;</a>
   </h3>
   <div class="copyright">
     &copy Jeremy Matthey 2019
