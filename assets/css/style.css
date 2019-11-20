@@ -89,7 +89,10 @@ p {
   margin-right: auto;
   width: 500px;
   height: 500px;
-  cursor: url('assets/img/gin.png');
+}
+
+.headshot:hover {
+    cursor: url('assets/img/gin.png');
 }
 
 .title {
