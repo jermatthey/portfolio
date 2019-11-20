@@ -50,7 +50,7 @@ overflow: hidden;
 
 .tab button:hover {
   background-color: #ccc;
-  cursor: url('assets/img/gin.png'), pointer;
+  cursor: url('/assets/img/gin.png');
 }
 
 .tab button.active {
