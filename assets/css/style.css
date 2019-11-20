@@ -83,21 +83,14 @@ p {
   font-size: 20px;
 }
 
-.mouseDown {
-  cursor: url('assets/img/gin2.png');
-}
-
-#headshot {
+.headshot {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 500px;
   height: 500px;
-  cursor: url('assets/img/gin.png'), pointer;
+  cursor: url('/assets/img/gin.png'), pointer;
 }
-
-
-
 
 .title {
   margin-left: 20px;
