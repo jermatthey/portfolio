@@ -89,7 +89,7 @@ p {
   margin-right: auto;
   width: 500px;
   height: 500px;
-  cursor: url('/assets/img/gin.png'), pointer;
+  cursor: url('assets/img/gin.png'), pointer;
 }
 
 .title {
