@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>New Patient Form</title>
+    <link rel="stylesheet" href="assets/style/patient.css">
+</head>
+
+<body>
+<form id="NewPatientRegistration" onsubmit="return false">
+<h2>New Patient Registration</h2>
+<h5>Please fill out the form below</h5>
+
+<label class="formlabel" for="FirstName">First Name:</label>
+<input type="text" id="FirstName" name="FirstName" size="30" maxlength="30"
+       data-rule-required="true"  data-msg-required="First Name is Required" >
+<label for="FirstName" class="error"></label>
+<br/>
+    
+<label class="formlabel" for="LastName">Last Name:</label>
+<input type="text" id="LastName" name="LastName" size="30" maxlength="30"
+       data-rule-required="true"  data-msg-required="Last Name is Required" >
+<label for="LastName" class="error"></label>
+<br/><br/>
+
+<label for="Email" class="formlabel">Email: </label>
+<input type="Email" id="Email" name="Email" size="30" maxlength="30"
+data-rule-email="true" data-msg-email="Invalid Email"
+data-rule-required="true" data-msg-required="Email required">
+<label for="Email" class="error"></label><br></br>
+
+<label class="formlabel">Gender: </label>
+<label for="Male"><input type="radio" name="Gender" id="Male" value="M"
+    data-rule-required="true" data-msg-required="Gender is Required" />Male</label>
+<label for="Female"><input type="radio" name="Gender" id="Female" value="F">Female</label>
+<label for="NA"><input type="radio" name="Gender" id="NA" value="na">NA</label>
+<label for="Gender" class="error"></label><br></br>
+
+<label for="Birthday" class="formlabel">Birthday: </label>
+<input type="date" id="Birthday" name="Birthday" size="10" maxlength="10"
+data-rule-date="true" data-msg-date="Date must be MM/DD/YYYY format"
+data-rule-required="true" data-msg-reguired="Birthday required">
+<label for="Birthday" class="error"></label><br></br>
+
+<label for="Height" class="formlabel">Height (inches): </label>
+<input type="text" id="Height" name="Height" size="3" minlength="2" maxlength="3"
+data-rule-number="true" data-msg-number="You Must Enter A Decimal Number" data-rule-min="12" data-msg-min="Number must be over 12" data-rule-max="120" data-msg-max="Number must be under 120"
+data-rule-required="true" data-msg-required="Height required">
+<label for="Height" class="error"></label><br></br>
+
+<label for="Weight" class="formlabel">Weight (pounds): </label>
+<input type="text" id="Weight" name="Weight" size="3" maxlength="3"
+data-rule-number="true" data-msg-number="You Must Enter A Decimal Number" data-rule-min="10" data-msg-min="Number must be over 10" data-rule-max="500" data-msg-max="Number must be under 500"
+data-rule-required="true" data-msg-required="Weight required">
+<label for="Weight" class="error"></label><br></br><hr></hr>
+
+<label for="PhoneNumber" class="formlabel">Phone Number: </label>
+<input type="text" id="PhoneNumber" name="PhoneNumber" size="14" maxlength="14"
+data-rule-required="true" data-msg-required="Phone number required" data-rule-phoneUS="true" data-msg-phoneUS="Invalid phone number">
+<label for="PhoneNumber" class="error"></label><br></br>
+
+<label class="formlabel">Marital Status: </label>
+<select name="MaritalStatus" id="MaritalStatus" data-rule-required="true" data-msg-required="Martial Status required">
+    <option value="">Select a Status...</option>
+    <option value="S">Single</option>
+    <option value="M">Married</option>
+    <option value="D">Divorced</option>
+    <option value="L">Legally Separated</option>
+    <option value="W">Widowed</option>
+</select><br></br>
+
+<label for="Address" class="formlabel">Address: </label>
+<input type="text" id="Address" name="Address" size="30" maxlength="30"
+data-rule-required="true" data-message-required="Address Required">
+<label for="Address" class="error"></label><br></br>
+
+<label for="City" class="formlabel">City: </label>
+<input type="text" id="City" name="City" size="30" maxlength="30"
+data-rule-required="true" data-msg-required="City required">
+<label for="City" class="error"></label><br></br>
+
+<label class="formlabel">State:</label>
+<select name="State" id="State" data-rule-required="true" data-msg-required="State required">
+	<option value="">Select a State...</option>
+	<option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+</select><br></br>	
+
+<label for="Zip" class="formlabel">Zip: </label>
+<input type="text" id="Zip" name="Zip" size="5" maxlength="5"
+data-rule-required="true" data-msg-required="Zip required" 
+data-rule-digits="true" data-msg-digits="Zip must be an integer" 
+data-rule-maxlength="5" data-msg-maxlength="Zip must be 5 digits"
+data-rule-minlength="5" data-msg-max-length="Zip must be 5 digits">
+<label for="Zip" class="error"></label><br></br><hr></hr>
+
+<label class="formlabel">Taking Medications: </label>
+<label for="Yes"><input type="radio" name="Medications" id="Yes" value="Y"
+data-rule-required="true" data-msg-required="This Field Is Required"/>Yes</label>
+<label for="No"><input type="radio" name="Medications" id="No" value="N"/>No</label>
+<label for="Medications" class="error"></label>
+<br></br>
+
+<label for="MedicationsList" class="formlabel">If yes, list medications here: </label>
+<input type="text" id="MedicationsList" name="MedicationsList" rows="3" cols="30"><br></br>
+
+<input type="submit" value="Submit Patient Form" onclick="CreatePatient()">
+</form>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="assets/scripts/patient.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+    h2 {
+        margin-left:20px;
+        font-size:35px;
+    }
+    
+    .DateVisited {
+      display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;  
+    }
+    
+    .DineInTakeOut {
+        display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    #TakeOut {
+       margin-left:15px;
+    }
+    
+    .FoodQuality {
+        display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .ServiceQuality{
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .Cleanliness {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .OrderAccuracy {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .SpeedOfService {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .Value {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .OverallExperience {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .Comments {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+  input[name~=Comments] {
+   display: inline-block;
+        width: 145px;
+        height:100px;
+       direction:ltr;
+        padding-left:5px ;
+        margin-bottom:10px;
+        overflow: scroll;
+  
+}
+    
+    .Name {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .Age {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    
+    .Email {
+         display: inline-block;
+        width: 145px;
+        text-align: right;
+        padding: 7px;
+        font-weight: bold;
+    }
+    .formlabel {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        padding: 5px;
+        font-weight: bold;
+    }
+    
+    #submit {
+        margin-left: 100px;
+    }
+       .error {
+        color: red;
+        padding-left: 5px;
+    }
