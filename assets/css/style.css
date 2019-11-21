@@ -89,8 +89,8 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
-  height: 500px;
+  max-width: 400px;
+  height: auto;
   cursor: url('/assets/img/gin.png'), pointer;
 }
 
@@ -157,15 +157,15 @@ margin-left: 200px;
   text-align: center;
 }
 
-.descrip1{
-  padding-bottom: 20px;
-}
-    
 .descrip1 img {
   max-width:180px;
     max-height:auto;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-top:0px;
   float: left;
+}
+.descrip1 {
+ padding-bottom: 30px;
 }
 
 .descrip2 img {
